@@ -1,14 +1,14 @@
 {
     "name":"stjeanmark/simple_inventory_tracker",
     "description":"A simple inventory tracker for products",
-    "homepage": "mailto:contact@markstjean.com",
+    "homepage": "http://markstjean.com/",
     "keywords":["contao", "simple", "inventory", "tracker", "Mark St. Jean"],
     "type":"contao-module",
     "license":"LGPL-3.0-or-later",
     "authors":[
         {
             "name":"Mark St. Jean",
-            "homepage":"mailto:contact@markstjean.com"
+            "homepage":"http://markstjean.com/"
         }
     ],
     "require":{

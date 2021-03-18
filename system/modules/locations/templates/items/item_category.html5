@@ -1,3 +1,0 @@
-<div class="category_full block<?= $this->class ?>">
-	<div class='name'><?php echo $this->name; ?></div>
-</div>

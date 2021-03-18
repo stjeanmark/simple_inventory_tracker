@@ -1,0 +1,16 @@
+<div class="mod_categories_list">
+  <?php if (empty($this->states)): ?>
+    <p class="empty"><?= $this->empty ?></p>
+  <?php else: ?>
+	<select name="locations_state_selector" class="locations_state_selector"><?= $this->stateOptions ?></select>
+    <?php foreach($this->states as $state): ?>
+		<div class='state state_<?php echo $state['abbr']; ?>'>
+			<h2 class='state_name'><?php echo $state['name']; ?></h2>
+			<?= implode('', $state['locations']) ?>
+		</div>
+	<?php endforeach; ?>
+		<div class="state state_not_found">
+			No locations in this region.
+		</div>
+  <?php endif; ?>
+</div>

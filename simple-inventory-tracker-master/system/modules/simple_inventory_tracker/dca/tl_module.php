@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Locations - Location Plugin for Contao
+ * Simple Inventory Tracker - A simple way to track inventory manually.
  *
- * Copyright (C) 2018 Andrew Stevens
+ * Copyright (C) 2021 Mark St. Jean.
  *
- * @package    asconsulting/locations
- * @link       http://andrewstevens.consulting
+ * @package    stjeanmark/simple_inventory_tracker
+ * @link       http://www.markstjean.com
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 

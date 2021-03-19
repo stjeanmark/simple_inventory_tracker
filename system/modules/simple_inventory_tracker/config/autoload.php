@@ -16,6 +16,5 @@
  */
 ClassLoader::addClasses(array
 (
-	'Asc\Model\SimpleInventoryTracker' 		=> 'system/modules/simple_inventory_tracker/library/Asc/Model/SimpleInventoryTracker.php',
-	'Asc\SimpleInventoryTracker'		 		=> 'system/modules/simple_inventory_tracker/library/Asc/SimpleInventoryTracker.php
+	'Asc\Model\SimpleInventoryTracker' 		=> 'system/modules/simple_inventory_tracker/library/Asc/Model/SimpleInventoryTracker.php'
 ));

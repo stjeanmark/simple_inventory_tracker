@@ -20,7 +20,7 @@
 $GLOBALS['BE_MOD']['content']['simple_inventory_tracker'] = array(
 	'tables' => array('tl_simple_inventory_tracker'),
 	'icon'   => 'system/modules/simple_inventory_tracker/assets/icons/simple_inventory_tracker.png',
-	'exportLocations' => array('Asc\Backend\SimpleInventoryTracker', 'exportSimpleInventoryTracker')
+	'exportLocations' => array('Asc\Backend\SimpleInventoryTrackerBackend', 'exportSimpleInventoryTracker')
 );
 
 /**

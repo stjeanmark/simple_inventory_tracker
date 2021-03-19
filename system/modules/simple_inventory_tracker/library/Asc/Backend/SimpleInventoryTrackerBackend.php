@@ -14,9 +14,9 @@
 namespace Asc\Backend;
 
 use Contao\DataContainer;
-use Asc\Model\SimpleInventoryTrackerBackend;
+use Asc\Model\SimpleInventoryTracker;
 
-class SimpleInventoryTracker extends \Backend
+class SimpleInventoryTrackerBackend extends \Backend
 {
 	public function toggleIcon($row, $href, $label, $title, $icon, $attributes)
 	{

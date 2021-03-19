@@ -14,7 +14,7 @@
 namespace Asc\Backend;
 
 use Contao\DataContainer;
-use Asc\Model\SimpleInventoryTracker;
+use Asc\Model\SimpleInventoryTrackerBackend;
 
 class SimpleInventoryTracker extends \Backend
 {

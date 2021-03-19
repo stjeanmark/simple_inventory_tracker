@@ -148,7 +148,7 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
 		),
 		'product_inventory' => array
 		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_location']['product_inventory'],
+			'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['product_inventory'],
 			'inputType'               => 'text',
 			'default'		  => '',
 			'search'                  => true,

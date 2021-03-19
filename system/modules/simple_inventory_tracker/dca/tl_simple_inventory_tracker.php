@@ -27,7 +27,6 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
             'keys' => array
             (
                 'id' 	=> 	'primary',
-                'pid' 	=> 	'index',
                 'alias' =>  'index'
             )
         )
@@ -108,12 +107,6 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
         'id' => array
         (
             'sql'                     => "int(10) unsigned NOT NULL auto_increment"
-        ),
-		
-		'pid' => array
-        (
-            'sql'                     => "int(10) unsigned NOT NULL auto_increment"
-			
         ),
         'tstamp' => array
         (

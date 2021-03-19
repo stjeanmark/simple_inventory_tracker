@@ -37,15 +37,13 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
     (
         'sorting' => array
         (
-            'mode'                    => 1,
-            'fields'                  => array('product_name', 'product_inventory'),
-            'flag'                    => 1,
+            'mode'                    => 0,
             'panelLayout'             => 'filter;search,limit'
         ),
         'label' => array
         (
             'fields'                  => array('product_name', 'product_inventory'),
-            'format'                  => '%s (%s)'
+            'format'                  => '%s ( %s )'
         ),
         'global_operations' => array
         (

@@ -106,56 +106,56 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
     (
         'id' => array
         (
-            'sql'                     => "int(10) unsigned NOT NULL auto_increment"
+		'sql'                     	=> "int(10) unsigned NOT NULL auto_increment"
         ),
         'tstamp' => array
         (
-            'sql'                     => "int(10) unsigned NOT NULL default '0'"
+		'sql'                     	=> "int(10) unsigned NOT NULL default '0'"
         ),
-		'sorting' => array
+	'sorting' => array
+	(
+		'sql'                    	=> "int(10) unsigned NOT NULL default '0'"
+	),
+	'alias' => array
+	(
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['alias'],
+		'exclude'                 => true,
+		'inputType'               => 'text',
+		'search'                  => true,
+		'eval'                    => array('unique'=>true, 'rgxp'=>'alias', 'doNotCopy'=>true, 'maxlength'=>128, 'tl_class'=>'w50'),
+		'save_callback' => array
 		(
-			'sql'                     => "int(10) unsigned NOT NULL default '0'"
+			array('Asc\Backend\SimpleInventoryTrackerBackend', 'generateAlias')
 		),
-		'alias' => array
-		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['alias'],
-			'exclude'                 => true,
-			'inputType'               => 'text',
-			'search'                  => true,
-			'eval'                    => array('unique'=>true, 'rgxp'=>'alias', 'doNotCopy'=>true, 'maxlength'=>128, 'tl_class'=>'w50'),
-			'save_callback' => array
-			(
-				array('Asc\Backend\SimpleInventoryTrackerBackend', 'generateAlias')
-			),
-			'sql'                     => "varchar(128) COLLATE utf8_bin NOT NULL default ''"
+		'sql'                     => "varchar(128) COLLATE utf8_bin NOT NULL default ''"
 
-		),
-		'product_name' => array
-		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['product_name'],
-			'inputType'               => 'text',
-			'default'		  => '',
-			'search'                  => true,
-			'eval'                    => array('mandatory'=>true, 'tl_class'=>'clr w50'),
-			'sql'                     => "varchar(255) NOT NULL default ''"
-		),
-		'product_inventory' => array
-		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['product_inventory'],
-			'inputType'               => 'text',
-			'default'		  => '',
-			'search'                  => true,
-			'eval'                    => array('mandatory'=>false, 'tl_class'=>'clr w50'),
-			'sql'                     => "varchar(255) NOT NULL default ''"
-		),
-		'published' => array
-		(
-			'exclude'                 => true,
-			'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['published'],
-			'inputType'               => 'checkbox',
-			'eval'                    => array('submitOnChange'=>true, 'doNotCopy'=>true),
-			'sql'                     => "char(1) NOT NULL default ''"
-		)		
+	),
+	'product_name' => array
+	(
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['product_name'],
+		'inputType'               => 'text',
+		'default'		  => '',
+		'search'                  => true,
+		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
+		'sql'                     => "varchar(255) NOT NULL default ''"
+	),
+	'product_inventory' => array
+	(
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['product_inventory'],
+		'inputType'               => 'text',
+		'default'		  => '',
+		'search'                  => true,
+		'eval'                    => array('mandatory'=>false, 'tl_class'=>'w50'),
+		'sql'                     => "int(10) unsigned NOT NULL default '0'"
+	),
+	'published' => array
+	(
+		'exclude'                 => true,
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_inventory_tracker']['published'],
+		'inputType'               => 'checkbox',
+		'eval'                    => array('submitOnChange'=>true, 'doNotCopy'=>true),
+		'sql'                     => "char(1) NOT NULL default ''"
+	)		
     )
 );
 

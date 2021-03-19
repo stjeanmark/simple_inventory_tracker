@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Locations - Location Plugin for Contao
+ * Simple Inventory Tracker - A simple way to track inventory manually.
  *
- * Copyright (C) 2018 Andrew Stevens
+ * Copyright (C) 2021 Mark St. Jean.
  *
- * @package    asconsulting/locations
- * @link       http://andrewstevens.consulting
+ * @package    stjeanmark/simple_inventory_tracker
+ * @link       http://www.markstjean.com
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
@@ -17,25 +17,13 @@
 
 
 // DECLARING LOCATIONS BACK END PLUGIN
-$GLOBALS['BE_MOD']['content']['locations'] = array(
-	'tables' => array('tl_location'),
-	'icon'   => 'system/modules/locations/assets/icons/location.png',
-	'exportLocations' => array('Asc\Backend\Locations', 'exportLocations')
+$GLOBALS['BE_MOD']['content']['simple_inventory_tracker'] = array(
+	'tables' => array('tl_simple_inventory_tracker'),
+	'icon'   => 'system/modules/simple_inventory_tracker/assets/icons/simple_inventory_tracker.png',
+	'exportLocations' => array('Asc\Backend\SimpleInventoryTracker', 'exportSimpleInventoryTracker')
 );
-// DECLARING CATEGORIES BACK END PLUGIN
-$GLOBALS['BE_MOD']['content']['categories'] = array(
-	'tables' => array('tl_category'),
-	'icon'   => 'system/modules/locations/assets/icons/category.png',
-	'exportCategories' => array('Asc\Backend\Categories', 'exportCategories')
-);
-
-/**
-* Front end modules
-*/
-$GLOBALS['FE_MOD']['locations']['locations_list'] 	= 'Asc\Module\LocationsList';
 
 /**
  * Models
  */
-$GLOBALS['TL_MODELS']['tl_location'] = 'Asc\Model\Location';
-$GLOBALS['TL_MODELS']['tl_category'] = 'Asc\Model\Category';
+$GLOBALS['TL_MODELS']['tl_simple_inventory_tracker'] = 'Asc\Model\SimpleInventoryTracker';

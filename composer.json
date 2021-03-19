@@ -19,14 +19,14 @@
     "autoload":{
         "psr-0": {
             "Asc\\": [
-                "system/modules/simple_location_tracker/library"
+                "system/modules/simple_inventory_tracker/library"
             ]
         }
     },
     "extra": {
         "contao": {
             "sources": {
-                "system/modules/simple_location_tracker": "system/modules/simple_location_tracker"
+                "system/modules/simple_inventory_tracker": "system/modules/simple_inventory_tracker"
             }
         }
 	}

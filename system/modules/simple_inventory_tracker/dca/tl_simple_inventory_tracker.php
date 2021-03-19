@@ -99,7 +99,7 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
     // Palettes
     'palettes' => array
     (
-        'default'                     => '{location_legend},product_name,product_inventory;{publish_legend},published;'
+        'default'                     => '{product_legend},product_name,product_inventory;{publish_legend},published;'
     ),
  
     // Fields

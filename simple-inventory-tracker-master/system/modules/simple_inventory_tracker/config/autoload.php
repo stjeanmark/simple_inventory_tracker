@@ -16,20 +16,6 @@
  */
 ClassLoader::addClasses(array
 (
-    'Asc\Module\LocationsList' 	=> 'system/modules/locations/library/Asc/Module/LocationsList.php',
-	'Asc\Backend\Locations' 	=> 'system/modules/locations/library/Asc/Backend/Locations.php',
-	'Asc\Backend\Categories' 	=> 'system/modules/locations/library/Asc/Backend/Categories.php',
-	'Asc\Model\Location' 		=> 'system/modules/locations/library/Asc/Model/Location.php',
-	'Asc\Model\Category' 		=> 'system/modules/locations/library/Asc/Model/Category.php',
-	'Asc\Locations'		 		=> 'system/modules/locations/library/Asc/Locations.php',
-	'Asc\Categories'		 	=> 'system/modules/locations/library/Asc/Categories.php'
-));
-
-/**
- * Register the templates
- */
-TemplateLoader::addFiles(array
-(
-    'mod_locations_list' 	=> 'system/modules/locations/templates/modules',
-	'item_location' 		=> 'system/modules/locations/templates/items',
+	'Asc\Model\SimpleInventoryTracker' 		=> 'system/modules/simple_inventory_tracker/library/Asc/Model/SimpleInventoryTracker.php',
+	'Asc\SimpleInventoryTracker'		 		=> 'system/modules/simple_inventory_tracker/library/Asc/SimpleInventoryTracker.php
 ));

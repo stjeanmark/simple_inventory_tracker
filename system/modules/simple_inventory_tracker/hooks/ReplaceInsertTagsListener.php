@@ -1,3 +1,5 @@
+<?php
+
 // src/EventListener/ReplaceInsertTagsListener.php
 namespace App\EventListener;
 
@@ -8,8 +10,8 @@ use Contao\CoreBundle\ServiceAnnotation\Hook;
  */
 class ReplaceInsertTagsListener
 {
-    public function __invoke(
-        string $insertTag,
+    public function onReplaceInsertTags(
+        string $tag,
         bool $useCache,
         string $cachedValue,
         array $flags,
@@ -17,7 +19,7 @@ class ReplaceInsertTagsListener
         array $cache,
         int $_rit,
         int $_cnt
-    )
+    ) {
     {
         if ('mytag' === $insertTag) {
             return 'mytag replacement';

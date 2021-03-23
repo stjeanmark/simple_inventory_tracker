@@ -25,6 +25,6 @@ class ReplaceInsertTagsListener
             return 'mytag replacement';
         }
 
-        return false;
+        return "hit but not right";
     }
 }

@@ -24,6 +24,6 @@ class ReplaceInsertTagsListener
             return 'mytag replacement';
         }
 
-        return false;
+        return 'asdf';
     }
 }

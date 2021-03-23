@@ -21,12 +21,7 @@
             "Asc\\": [
                 "system/modules/simple_inventory_tracker/library"
             ]
-        },
-    	"psr-4": {
-            "App\\": [
-                "system/modules/simple_inventory_tracker/hooks"
-            ]
-        }  
+        } 
     },
     "extra": {
         "contao": {

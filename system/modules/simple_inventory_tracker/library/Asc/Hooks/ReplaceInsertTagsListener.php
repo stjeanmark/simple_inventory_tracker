@@ -1,6 +1,6 @@
 <?php
 // src/EventListener/ReplaceInsertTagsListener.php
-namespace App\EventListener;
+namespace Asc\Backend\Listener\ContaoHooks;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 

@@ -28,5 +28,3 @@ class ReplaceInsertTagsListener
         return false;
     }
 }
-
-?}

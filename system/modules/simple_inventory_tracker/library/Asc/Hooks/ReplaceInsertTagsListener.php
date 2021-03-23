@@ -20,6 +20,7 @@ class ReplaceInsertTagsListener
         int $_cnt
     )
     {
+        console.log($insertTag);
         if ('mytag' === $insertTag) {
             return 'mytag replacement';
         }

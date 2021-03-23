@@ -1,3 +1,4 @@
+<?php
 // src/EventListener/ReplaceInsertTagsListener.php
 namespace App\EventListener;
 

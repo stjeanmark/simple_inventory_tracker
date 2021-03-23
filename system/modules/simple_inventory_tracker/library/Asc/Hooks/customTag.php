@@ -1,4 +1,6 @@
+<?php
 // src/EventListener/ReplaceInsertTagsListener.php
+console.log("hit");
 namespace App\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
@@ -26,3 +28,5 @@ class ReplaceInsertTagsListener
         return false;
     }
 }
+
+?}

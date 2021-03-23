@@ -1,5 +1,5 @@
 <?php
-
+console.log("Backend File Hit");
 /**
  * Simple Inventory Tracker - A simple way to track inventory manually.
  *

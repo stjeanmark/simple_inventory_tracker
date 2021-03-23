@@ -20,8 +20,12 @@ class ReplaceInsertTagsListener
         int $_cnt
     )
     {
+        console.log("hit");
         if ('mytag' === $insertTag) {
             return 'mytag replacement';
+        }
+        if ('simple_inventory' === $insertTag) {
+            return 'DING';
         }
 
         return false;

@@ -6,11 +6,11 @@ class SimpleInventoryTrackerInsertTag
 {
     public function onReplaceTag (string $insertTag)
     {
-        if (stristr($strTag, "::") === FALSE) {
-		return false;
+        if (stristr($insertTag, "::") === FALSE) {
+		return 'no_id';
 	}
 		
-	$arrTag = explode("::", $strTag);
+	$arrTag = explode("::", $insertTag);
 		
         var_dump($arrTag);
 

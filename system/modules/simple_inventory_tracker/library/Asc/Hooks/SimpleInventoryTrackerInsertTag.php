@@ -2,7 +2,7 @@
 
 namespace Asc\Hooks;
 
-class SimpleInventoryTrackerInsertTag extends EventListener
+class SimpleInventoryTrackerInsertTag
 {
     public function onReplaceTag (string $insertTag)
     {

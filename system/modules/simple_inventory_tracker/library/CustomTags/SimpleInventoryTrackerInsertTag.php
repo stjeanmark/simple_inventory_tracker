@@ -2,6 +2,8 @@
 
 	namespace CustomTags;
 
+	use Asc\Model\SimpleInventoryTracker;
+
 	class SimpleInventoryTrackerInsertTag
 	{
 		public function onReplaceTag (string $insertTag)

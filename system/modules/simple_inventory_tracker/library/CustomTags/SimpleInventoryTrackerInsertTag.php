@@ -23,7 +23,7 @@
 					// take our id, $arrTag[1], and pull our data out and return it
 					$ourInfo = SimpleInventoryTracker::findOneBy('id', $arrTag[1]);
 					// for now, lets just return our ID to show we can get here
-					return $ourInfo;
+					return $ourInfo->id;
 				break;
 
 				// if we want to have other tags do other things they would go here

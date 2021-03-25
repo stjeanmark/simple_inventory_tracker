@@ -1,6 +1,6 @@
 <?php
 
-namespace Asc\Hooks;
+namespace CustomTags;
 
 class SimpleInventoryTrackerInsertTag
 {

@@ -32,5 +32,5 @@ $GLOBALS['TL_MODELS']['tl_simple_inventory_tracker'] = 'Asc\Model\SimpleInventor
  * Hooks
  */
 if (\Config::getInstance()->isComplete()) {
-	$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('SimpleInventoryTracker\SimpleInventoryTracker', 'onReplaceTag');
+	$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('SimpleInventoryTrackerInsertTag', 'onReplaceTag');
 }

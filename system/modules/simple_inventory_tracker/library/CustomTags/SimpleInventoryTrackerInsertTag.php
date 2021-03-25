@@ -6,13 +6,19 @@ class SimpleInventoryTrackerInsertTag
 {
     public function onReplaceTag (string $insertTag)
     {
-        if($insertTag === 'mytag') {
-            return 'replaced!';
-        }
-        else if($insertTag === 'simple_inventory') {
-            return 'working!@!';
-        }
+        if (stristr($strTag, "::") === FALSE) {
+			return false;
+		}
+		
+		$arrTag = explode("::", $strTag);
+		
+        var_dump($arrTag);
+        die();
         
-        return 'triggered_atleast';
+        
+        //<Model_Name>::findBy('<field_name>', 'lookup_data');
+        
+        
+        return 'grabbed_and_returned';
     }
 }

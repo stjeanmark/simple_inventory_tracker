@@ -1,9 +1,6 @@
 <?php
 
-// src/EventListener/ReplaceInsertTagsListener.php
-namespace App\EventListener;
-
-use Contao\CoreBundle\ServiceAnnotation\Hook;
+namespace SimpleInventoryTracker;
 
 class SimpleInventoryTrackerInsertTag extends EventListener
 {

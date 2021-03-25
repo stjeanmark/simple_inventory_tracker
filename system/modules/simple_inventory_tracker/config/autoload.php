@@ -18,3 +18,8 @@ ClassLoader::addClasses(array
 (
 	'Asc\Model\SimpleInventoryTracker' 		=> 'system/modules/simple_inventory_tracker/library/Asc/Model/SimpleInventoryTracker.php'
 ));
+
+ClassLoader::addClasses(array
+(
+	'SimpleInventoryTracker\SimpleInventoryTrackerInsertTag' 	=> 'system/modules/isotope_moretags/library/Asc/Hooks/SimpleInventoryTrackerInsertTag.php'
+));

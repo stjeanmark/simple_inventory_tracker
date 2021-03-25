@@ -19,9 +19,9 @@
 				// if the tag is what we want, {{simple_inventory::id}}, then lets go
 				case 'simple_inventory':
 					// take our id, $arrTag[1], and pull our data out and return it
-
+					$ourInfo = SimpleInventoryTracker::findOneBy('id', $arrTag[1]);
 					// for now, lets just return our ID to show we can get here
-					return $arrTag[1];
+					return $ourInfo;
 				break;
 
 				// if we want to have other tags do other things they would go here

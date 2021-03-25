@@ -1,6 +1,6 @@
 <?php
 
-namespace Asc/Hooks;
+namespace Asc\Hooks;
 
 class SimpleInventoryTrackerInsertTag extends EventListener
 {

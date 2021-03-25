@@ -15,7 +15,6 @@
 * Back end modules
 */
 
-
 // DECLARING LOCATIONS BACK END PLUGIN
 $GLOBALS['BE_MOD']['content']['simple_inventory_tracker'] = array(
 	'tables' => array('tl_simple_inventory_tracker'),
@@ -27,3 +26,11 @@ $GLOBALS['BE_MOD']['content']['simple_inventory_tracker'] = array(
  * Models
  */
 $GLOBALS['TL_MODELS']['tl_simple_inventory_tracker'] = 'Asc\Model\SimpleInventoryTracker';
+
+
+/**
+ * Hooks
+ */
+if (\Config::getInstance()->isComplete()) {
+	$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = [SimpleInventoryTrackerInsertTag::class, 'onReplaceTag'];
+}

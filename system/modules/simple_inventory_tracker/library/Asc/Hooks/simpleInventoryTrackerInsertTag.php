@@ -1,15 +1,18 @@
 <?php
 
-// src/EventListener/ActivateAccountListener.php
+// src/EventListener/ReplaceInsertTagsListener.php
 namespace App\EventListener;
 
-use Contao\MemberModel;
-use Contao\ModuleRegistration;
+use Contao\CoreBundle\ServiceAnnotation\Hook;
 
-class ActivateAccountListener
+class SimpleInventoryTrackerInsertTag
 {
-    public function onAccountActivation(MemberModel $member, ModuleRegistration $module): void
+    public function onReplaceTag (string $insertTag)
     {
-        // Custom logic
+        if($insertTag === 'replaceme') {
+            return 'replaced!';
+        }
+        
+        return 'triggered_atleast';
     }
 }

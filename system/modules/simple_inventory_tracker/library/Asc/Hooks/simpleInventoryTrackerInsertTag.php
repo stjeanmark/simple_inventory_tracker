@@ -5,7 +5,7 @@ namespace App\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 
-class SimpleInventoryTrackerInsertTag
+class SimpleInventoryTrackerInsertTag extends EventListener
 {
     public function onReplaceTag (string $insertTag)
     {

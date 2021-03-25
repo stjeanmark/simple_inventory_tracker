@@ -7,15 +7,13 @@ class SimpleInventoryTrackerInsertTag
     public function onReplaceTag (string $insertTag)
     {
         if (stristr($strTag, "::") === FALSE) {
-			return false;
-		}
+		return false;
+	}
 		
-		$arrTag = explode("::", $strTag);
+	$arrTag = explode("::", $strTag);
 		
         var_dump($arrTag);
-        die();
-        
-        
+
         //<Model_Name>::findBy('<field_name>', 'lookup_data');
         
         

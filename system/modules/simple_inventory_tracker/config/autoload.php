@@ -21,5 +21,5 @@ ClassLoader::addClasses(array
 
 ClassLoader::addClasses(array
 (
-	'SimpleInventoryTracker\SimpleInventoryTrackerInsertTag' 	=> 'system/modules/isotope_moretags/library/Asc/Hooks/SimpleInventoryTrackerInsertTag.php'
+	'SimpleInventoryTracker\SimpleInventoryTrackerInsertTag' 	=> 'system/modules/simple_inventory_tracker/library/Asc/Hooks/SimpleInventoryTrackerInsertTag.php'
 ));

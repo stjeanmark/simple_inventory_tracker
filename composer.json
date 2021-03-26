@@ -1,6 +1,6 @@
 {
     "name":"stjeanmark/simple_inventory_tracker",
-    "description":"A simple inventory tracker for products",
+    "description":"A simple way to track an inventory and display it on a page. Find directions on github.",
     "homepage": "http://markstjean.com/",
     "keywords":["contao", "simple", "inventory", "tracker", "Mark St. Jean"],
     "type":"contao-module",

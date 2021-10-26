@@ -108,7 +108,7 @@ $GLOBALS['TL_DCA']['tl_simple_inventory_tracker'] = array
         ),
         'tstamp' => array
         (
-		'sql'                     	=> "int(10) unsigned NOT NULL default '0'"
+		'sql'                     	=> "int(10) unsigned NOT NULL default 0"
         ),
 	'sorting' => array
 	(
